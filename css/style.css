@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw; 
+    font-family: 'Space Mono', monospace;
+}
+.container{
+    background-color: hsl(185, 41%, 84%);
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    justify-items: center;
+    align-items:baseline;
+    height: 100%; 
+}
+header{
+    align-self: center;
+    font-size: .75rem;
+    color: hsl(186, 14%, 43%)
+}
+main{
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    background-color:  hsl(0, 0%, 100%);
+    padding: 10px;
+}
+/* ------------------------------------------------ */
+
+.sect-1{
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 12px;
+    color:hsl(186, 14%, 43%);
+}
+.cont-input-factura{
+     margin-bottom: 15px; 
+}
+label{
+    font-size: .8rem;
+}
+.cont-label-parrafo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    font-size: 24px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    direction: rtl;
+    direction: -moz-rtl; 
+    direction: -webkit-rtl; 
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    background-color:hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    outline-color: hsl(167, 84%, 43%);
+}
+.factura{
+    background-image:url(../images/icon-dollar.svg);
+}
+.personas{
+    background-image:url(../images/icon-person.svg);
+}
+.border-rojo{
+    border: 1px solid red;
+}
+.botones-porcentaje{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.parrafo-rojo{
+    color: red;
+    font-size: 0.8rem;
+}
+.btn-porcentaje{
+    padding: 5px ;
+    width: 30%;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+.btn-porcentaje:hover{
+    background-color:hsl(185, 41%, 84%) ;
+    color: hsl(183, 100%, 15%);
+    transition: .5s;
+}
+ .custom{
+    
+    background-color:hsl(189, 41%, 97%);
+    color:  hsl(183, 100%, 15%);
+    direction: rtl;
+    direction: -moz-rtl; 
+    direction: -webkit-rtl;
+    outline-color: hsl(167, 84%, 43%);
+} 
+.activo{
+    background-color:hsl(172, 67%, 45%);;
+    color: hsl(183, 100%, 15%) ;
+} 
+.cont-input-personas{
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------- */
+.sect-2{
+    width: 50%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: hsl(183, 100%, 15%);
+}
+.tip-amount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 20px 0px 20px;
+    color: hsl(185, 41%, 84%);
+    margin-left: 35px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 20px 60px 20px;
+    color: hsl(185, 41%, 84%);
+    margin-left: 35px;
+}
+small{
+   color: hsl(186, 14%, 43%); 
+}
+.parrafo-resultado{
+    font-size: 2.5rem;
+    color: hsl(172, 67%, 45%);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.boton-reset{
+    width:80% ;
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(186, 14%, 43%);
+    color:hsl(183, 100%, 15%);
+}
+.boton-reset:hover{
+    background-color:hsl(172, 67%, 45%); ;
+    color: hsl(183, 100%, 15%);
+    transition: .5s;
+}
+
+@media(max-width:425px){
+    header{
+        align-self: center;
+        font-size: .75rem;
+        margin: 25px;
+    }
+    main{
+        max-width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-1{
+        width: 90%;
+        margin: 5px;
+        padding: 5px; 
+    }
+    .btn-porcentaje{
+        flex-basis: 47%;
+    }
+    .sect-2{
+        width: 96%;
+    }
+    .parrafo-resultado{
+        font-size: 1.9rem;
+    }
+    .tip-amount{
+        margin: 30px 10px 0px 10px;
+    }
+    .total{
+        margin: 0px 10px 40px 10px;
+    }
+}
+
+
